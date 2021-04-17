@@ -9,6 +9,6 @@ for i in 0 1 2; do
     --metadata pod-cidr=10.200.${i}.0/24 \
     --private-network-ip 10.240.0.2${i} \
     --scopes compute-rw,storage-ro,service-management,service-control,logging-write,monitoring \
-    --subnet sub-k8-1 \
+    --subnet kubernetes \
     --tags kubernetes-the-hard-way,worker
 done

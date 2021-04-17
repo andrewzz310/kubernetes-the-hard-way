@@ -15,8 +15,7 @@ gcloud compute firewall-rules create kubernetes-the-hard-way-allow-internal \
   --network kubernetes-the-hard-way \
   --source-ranges 10.240.0.0/24,10.200.0.0/16
 
-  # firewall rule for external ssh, icmp, and https
-
+# firewall rule for external ssh, icmp, and https
 gcloud compute firewall-rules create kubernetes-the-hard-way-allow-external \
   --allow tcp:22,tcp:6443,icmp \
   --network kubernetes-the-hard-way \
